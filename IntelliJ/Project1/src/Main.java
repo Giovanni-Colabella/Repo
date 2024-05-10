@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 class NavinException extends Exception {
     public NavinException(String string) {
@@ -42,5 +45,16 @@ public class Main {
         for(int n : nums) {
             System.out.println(n);
         }
+
+        Map<String, Integer> students = new HashMap<>();
+        students.put("Navin",25);
+        students.put("Giovanni",19);
+
+        System.out.println(students.keySet());
+
+        for(String key : students.keySet()){
+            System.out.println(key + " : " + students.get(key));
+        }
+
     }
 }
